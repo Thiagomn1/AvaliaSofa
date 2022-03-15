@@ -37,7 +37,7 @@ const getSofas = asyncHandler(async (req, res) => {
 
   if (!user) {
     res.status(401)
-    throw new Error("User not found")
+    throw new Error("Usuário não encontrado")
   }
 
   const sofas = await Sofa.find().sort({ createdAt: -1 })
@@ -55,7 +55,7 @@ const getSofa = asyncHandler(async (req, res) => {
 
   if (!user) {
     res.status(401)
-    throw new Error("User not found")
+    throw new Error("Usuário não encontrado")
   }
 
   const sofa = await Sofa.findById(req.params.id)
