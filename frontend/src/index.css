@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@700&display=swap");
+
+:root {
+  --default: #818a91;
+  --primary: #0275d8;
+  --success: #5cb85c;
+  --info: #5bc0de;
+  --danger: #f0ad4e;
+  --danger-red: #d9534f;
+  --green: #34cb79;
+  --gray: #b9b9b9;
+  --textos: #6c6c80;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #e5e5e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto ", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin: 4rem 4rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin-right: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--textos);
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  color: var(--textos);
+}
+
+h3 {
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 6.4rem;
+}
+
+h2 {
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+
+h1 {
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-size: 5.4rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: var(--textos);
+}
+
+a {
+  cursor: pointer;
+}
+
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  margin: 6rem;
+}
+
+.logout:hover {
+  cursor: pointer;
+}
+
+.btn-success {
+  margin-right: 1rem;
+}
+
+.btn-success {
+  background-color: var(--green);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 1.7rem 4rem;
+}
+
+.btn-success:hover {
+  background-color: var(--success);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-default {
+  background-color: var(--gray);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 1.7rem 4rem;
+}
+
+.btn-default:hover {
+  background-color: var(--default);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-danger {
+  background-color: var(--danger-red);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 1.7rem 4rem;
+}
+
+.btn-danger:hover {
+  background-color: var(--danger);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-text {
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.form__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form__submit {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+label {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+input {
+  width: 70%;
+  min-width: 245px;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 10px;
+}
+
+.info__container {
+  margin-bottom: 6rem;
+}
+
+.info__text {
+  margin: 1rem 6rem;
+}
+
+.info__avaliacao {
+  margin: 0rem 6rem;
+  float: left;
+}
+
+.info__btn {
+  margin: 0 6rem;
+  float: right;
+}
+
+.sofa__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7rem 5rem;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.sofa__profile {
+  width: 80%;
+  max-width: 300px;
+  min-width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.sofa__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sofa__info {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 10rem;
+}
+
+.sofa__status {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-left: 10rem;
+  padding: 2rem 2rem;
+}
+
+.sofa__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sofa__img {
+  width: 80%;
+  height: auto;
+}
+
+.info__container {
+  margin-bottom: 6rem;
+}
+
+.info__text {
+  margin: 1rem 6rem;
+}
+
+.info__btn {
+  margin: 0 6rem;
+  float: right;
+}
+
+.approved {
+  padding: 2rem 4rem;
+  background-color: var(--success);
+  border-radius: 5px;
+}
+
+.Avaliação {
+  margin-top: 1rem;
+  padding: 2rem 4rem;
+  background-color: var(--primary);
+  border-radius: 5px;
+}
+
+.Aprovado {
+  padding: 2rem 4rem;
+  background-color: var(--green);
+  border-radius: 5px;
+}
+
+.Reprovado {
+  padding: 2rem 4rem;
+  background-color: var(--danger-red);
+  border-radius: 5px;
+}
+
+.avaliar__info {
+  margin: 2rem 0;
+}
